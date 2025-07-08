@@ -1,0 +1,13 @@
+.sidebar {
+    width: 240px;
+    background-color: #063B14;
+    min-height: 100vh;
+    a{
+        text-decoration: none;
+    }
+}
+
+.sidebar .nav-link:hover {
+    background-color: #A6FFA9;
+    color: #063B14 !important;
+}

@@ -1,0 +1,40 @@
+.bannerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // arxa fon: soft gradient + azca şəffaf overlay
+  background: linear-gradient(135deg, rgba(6, 59, 20, 0.9),#063B14),
+  url('/food-pattern.svg') center/cover;
+  backdrop-filter: blur(5px);
+  padding: 2rem 0;
+
+  .bannerText {
+    color: #ffffff;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 48px;
+    opacity: 0;
+    filter: blur(5px);
+    transform: scale(0.8);
+    animation: appearBanner 1.5s ease-out forwards;
+    animation-delay: 0.5s;
+    cursor: pointer;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+
+    &:hover {
+      transform: scale(1.05) rotate(-2deg);
+      text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+    }
+  }
+}
+
+@keyframes appearBanner {
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+  }
+}

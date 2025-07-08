@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poetsen+One&display=swap');
+.container{
+  width: 100%;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  color: #DFFFE0;
+  .main{
+    width: 60%;
+    display:  flex;
+    flex-direction:  column;
+    align-items:  center;
+    .ust{
+      display:  flex;
+      flex-direction:  column;
+      align-items: center;
+      gap: 1rem;
+      font-family: "Poetsen One", sans-serif;
+      font-weight: 400;
+
+      padding: 2.5rem 0;
+      h1{
+        font-size: 76px;
+        font-weight: 400;
+        line-height: 100%;
+      }
+      h2{
+        font-size: 32px;
+        font-weight: 400;
+      }
+    }
+    .alt{
+      display: flex;
+      justify-content:   space-evenly;
+      align-items: center;
+
+      padding: 2.5rem 0;
+
+
+      .image{
+        width: 25%;
+
+        img{
+          width: 100%;
+          //transform: rotate(27deg);
+        }
+      }
+      .about{
+        display: flex;
+        flex-direction:   column;
+        align-items: center;
+        width: 50%;
+        gap:  2rem;
+        font-family: "Poppins", sans-serif;
+
+        h1{
+          font-size: 44px;
+        }
+        span{
+          font-size: 20px;
+          width: 75%;
+
+        }
+
+      }
+    }
+  }
+  @media screen and (min-width:320px) and (max-width:768px){
+      .main{
+        width: 100%;
+        gap: 2rem;
+        .ust{
+          width: 100%;
+          h1{
+            font-size: 52px;
+          }
+          h2{
+            font-size: 24px;
+          }
+        }
+        .alt{
+          width: 100%;
+          padding: 0 0;
+          flex-direction: column;
+          .about{
+            width: 100%;
+            span{
+              width: 99%;
+              text-align: center;
+            }
+            h1{
+              font-size: 34px;
+              text-align: center;
+            }
+            .image{
+              width:  100%;
+            }
+          }
+        }
+
+      }
+  }
+}

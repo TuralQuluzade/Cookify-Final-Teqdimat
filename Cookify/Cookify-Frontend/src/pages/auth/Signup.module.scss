@@ -1,0 +1,75 @@
+.container{
+  width: 100%;
+  height: 100vh;
+  background-image: url("/authBackground.png");
+  display:  flex;
+  justify-content:  center;
+  align-items:  center;
+  .main{
+    border: 1px solid white;
+    width: 20%;
+    height: 40%;
+    background-color: #DFFFE0;
+    border-radius: 25px;
+    display:  flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content:  space-between;
+    padding: 2rem 0;
+    .giris{
+      width: 100%;
+      display:flex;
+      justify-content: center;
+      font-family: "Poetsen One", sans-serif;
+      h1{
+        font-weight: 400;
+        color: #0F7229;
+      }
+    }
+    .form{
+      width: 100%;
+      height: 70%;
+      display:  flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      button{
+        width: 50%;
+        height: 50px;
+        border-radius: 15px;
+        border: none;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        background-color: #0F7229;
+        color: #A6FFA9;
+        //font-weight: 400;
+      }
+
+
+      input{
+        width: 80%;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        outline:  none;
+        background-color: #A6FFA9;
+        padding-left: 12px;
+      }
+    }
+    .kecid{
+      font-family: "Poppins", sans-serif;
+      width: 100%;
+      display:  flex;
+      flex-direction: column;
+      align-items:  center;
+      text-align: center;
+      h4{
+        font-weight: 400;
+        font-size: 20px;
+        a{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

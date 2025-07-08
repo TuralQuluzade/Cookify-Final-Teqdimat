@@ -1,0 +1,186 @@
+.container{
+  width: 100%;
+  padding: 5rem 0;
+  display:  flex;
+  justify-content: center;
+  .main{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: #0F7229;
+    align-items: center;
+    .post{
+      width: 100%;
+      display:  flex;
+      flex-direction: column;
+      align-items: center;
+      button{
+        &:hover{
+          cursor: pointer;
+        }
+      }
+      .image{
+         width: 100%;
+         position:  relative;
+         button{
+           position: absolute;
+           right: 0px;
+         }
+       }
+      .yazilan{
+        width: 98%;
+        display:  flex;
+        justify-content: space-around;
+        padding:  1rem 0;
+        button{
+          background-color: #DFFFE0;
+          font-weight: 400;
+          font-size: 15px;
+          font-family: "Poppins", sans-serif;
+          color: #063B14;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+        .input{
+          width: 80%;
+          height: 50px;
+          border-radius: 10px;
+          outline:none;
+          background-color: #DFFFE0;
+          border: none;
+          font-size: 16px;
+          font-family: "Poppins", sans-serif;
+        }
+      }
+    }
+    .wrapper{
+      padding:0 0 1rem 0;
+
+      display:  flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #DFFFE0;
+      border-radius:  25px;
+      h3{
+        font-size: 20px;
+        font-family:  "Poppins", sans-serif;
+        font-weight: 400;
+      }
+      .preview{
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        justify-content:  center;
+
+      .chips{
+        width: 100%;
+        display:  flex;
+        align-items: center;
+        padding: 1rem 0;
+        justify-content: center;
+        gap:  1rem;
+        .chip{
+          width: 15%;
+          display:  flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 .5rem;
+          color: #A6FFA9;
+          background-color: #0F7229;
+          border-radius: 10px;
+        }
+
+        span{
+          font-size: 16px;
+          font-family:  "Poppins", sans-serif;
+          font-weight: 400;
+        }
+      }
+    }
+      .components{
+        width: 100%;
+        display: flex;
+        flex-wrap:  wrap;
+        justify-content:  center;
+        gap:  .5rem;
+
+        .item{
+          width: 15%;
+          display:  flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 .5rem;
+          color: #A6FFA9;
+          background-color: #0F7229;
+          border-radius: 10px;
+          span{
+            font-size: 16px;
+            font-family:  "Poppins", sans-serif;
+            font-weight: 400;
+          }
+          button{
+            width: 30px;
+            height:   30px;
+          }
+        }
+      }
+    }
+  }
+    @media screen and (max-width: 768px){
+    .main{
+      width:99%;
+      .post{
+        button{
+          width: 5px;
+        }
+        .yazilan{
+          position: relative;
+          width: 100%;
+          label{
+
+          .camera{
+            position:  absolute;
+            left: 0;
+          }
+          }
+          button{
+            position: absolute;
+            right: 0;
+            border: 1px solid white;
+            width: 10%;
+            z-index: 10;
+        }
+          .input{
+            width: 100%;
+            padding-left: 50px;;
+          }
+
+        }
+      }
+      .wrapper{
+        width: 100%;
+        .preview{
+          .chips{
+            width:  100%;
+            flex-wrap: wrap;
+            flex-direction:  row;
+            .chip{
+              width: 100%;
+            }
+          }
+        }
+        .components{
+          width: 100%;
+          flex-direction: row;
+          flex-wrap: wrap;
+          .item{
+            width: 40%;
+          }
+
+        }
+      }
+    }
+  }
+}

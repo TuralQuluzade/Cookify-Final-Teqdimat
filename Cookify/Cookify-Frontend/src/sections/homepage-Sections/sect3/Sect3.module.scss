@@ -1,0 +1,100 @@
+.container{
+  width: 100%;
+  padding: 5rem 0;
+  display:  flex;
+  justify-content: center;
+  .main{
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    width: 50%;
+
+    .basliq{
+      padding: 0 0 5rem 0;
+      h1{
+        font-family: "Poetsen One", sans-serif;
+        font-size: 44px;
+        color: #DFFFE0;
+        font-weight: 400;
+      }
+    }
+    .formdiv{
+      display: flex;
+      flex-direction: column;
+
+      width: 65%;
+      border-radius: 20px;
+      background-color: #0F7229;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      padding: 1rem ;
+      .form{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem;
+        input{
+          width: 46%;
+          height: 50px;
+          border-radius: 10px;
+          border: none;
+          outline: none;
+          background-color: #A6FFA9;
+          font-size: 16px;
+        }
+        .ustinp{
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1.5rem ;
+          justify-content:  space-between;
+        }
+      }
+      button{
+        width: 40%;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        background-color: #A6FFA9;
+        color: #063B14;
+        font-size: 16px;
+        &:hover{
+          background-color: #063B14;
+          color: #A6FFA9;
+          transition: .3s;
+        }
+      }
+    }
+  }
+  @media screen and (min-width:320px) and (max-width: 465px){
+
+    .main{
+      width: 100%;
+      text-align: center;
+      .formdiv{
+        width: 95%;
+        .form{
+          input{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width:465px) and (max-width: 768px){
+
+    .main{
+      width: 100%;
+      text-align: center;
+      .formdiv{
+        width: 60%;
+        .form{
+          input{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

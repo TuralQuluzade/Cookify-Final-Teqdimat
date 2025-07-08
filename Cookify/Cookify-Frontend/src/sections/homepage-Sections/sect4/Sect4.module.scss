@@ -1,0 +1,38 @@
+.container{
+  width: 100%;
+  padding: 5rem 0;
+  display:  flex;
+  justify-content: center;
+  .main{
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    width: 60%;
+    .basliq{
+      padding: 0 0 5rem 0;
+      h1{
+        font-family: "Poetsen One", sans-serif;
+        font-size: 44px;
+        color: #DFFFE0;
+        font-weight: 400;
+      }
+    }
+    .supporters{
+      display: flex;
+      width: 100%;
+      .card{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  @media screen and (max-width: 768px){
+    .main{
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}

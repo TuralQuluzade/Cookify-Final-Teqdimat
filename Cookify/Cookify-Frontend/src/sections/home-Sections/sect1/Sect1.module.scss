@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #DFFFE0;
+
+  .main {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .ust {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      font-family: "Poetsen One", sans-serif;
+      font-weight: 400;
+      padding: 1rem 0;
+      h1{
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 100%;
+        position: relative;
+        opacity: 0;
+        left: -1000px;
+        animation: slideIn 1s ease-out forwards;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        letter-spacing: 2px;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+      }
+      h2{
+        font-size: 56px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+@keyframes slideIn {
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}

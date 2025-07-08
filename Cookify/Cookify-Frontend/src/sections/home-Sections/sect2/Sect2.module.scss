@@ -1,0 +1,27 @@
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 8rem 0;
+  background-image: url("/homepage-background.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat:  no-repeat;
+  .main{
+    width: 80%;
+    display: flex;
+
+    padding: 8rem 0;
+    justify-content: space-between;
+    .yazi{
+      width: 50%;
+      h2{
+        font-size: 42px;
+      }
+    }
+    .image{
+        width: 30%;
+    }
+  }
+}
